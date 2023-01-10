@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: ITCEFS Sites Project - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.adobe.aem.itc.efs:itc-efs.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for ITCEFS Sites Projec
+ t
+Content-Package-Roots: /apps/itcefs-packages,/apps/itcefs-vendor-package
+ s
+

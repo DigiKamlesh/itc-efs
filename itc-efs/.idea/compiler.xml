@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itc-efs.core" />
+        <module name="itc-efs.ui.content" />
+        <module name="itc-efs.it.tests" />
+        <module name="itc-efs.ui.config" />
+        <module name="itc-efs.ui.apps" />
+        <module name="itc-efs.ui.apps.structure" />
+        <module name="itc-efs.ui.tests" />
+        <module name="itc-efs.all" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

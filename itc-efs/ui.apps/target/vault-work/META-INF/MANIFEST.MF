@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: ITCEFS Sites Project - UI apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.adobe.aem.itc.efs:itc-efs.ui.apps:1.0.0-SNAPSHOT
+Content-Package-Description: UI apps package for ITCEFS Sites Project
+Content-Package-Dependencies: adobe/cq60:core.wcm.components.content:2.1
+ 7.12,adobe/cq60:core.wcm.components.config:2.17.12
+Content-Package-Dependencies-Locations: adobe/cq60:core.wcm.components.c
+ ontent:2.17.12=maven:com.adobe.cq:core.wcm.components.content:2.17.12:z
+ ip,adobe/cq60:core.wcm.components.config:2.17.12=maven:com.adobe.cq:cor
+ e.wcm.components.config:2.17.12:zip
+Content-Package-Roots: /apps/itcefs/clientlibs,/apps/itcefs/components,/
+ apps/itcefs/i18n
+Import-Package: com.adobe.aem.itc.efs.core.models;version="[1.0.0,2.0.0)
+ ",org.apache.sling.scripting.sightly;version="[2.0.0,3.0.0)"
+

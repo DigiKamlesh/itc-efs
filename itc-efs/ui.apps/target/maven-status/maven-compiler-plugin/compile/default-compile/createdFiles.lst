@@ -1,0 +1,8 @@
+org\apache\sling\scripting\sightly\apps\itcefs\components\xfpage\content__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\commerce\catalogpage\customheaderlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\page\customheaderlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\xfpage\customfooterlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\commerce\catalogpage\customfooterlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\page\customfooterlibs__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\helloworld\helloworld__002e__html.class
+org\apache\sling\scripting\sightly\apps\itcefs\components\xfpage\customheaderlibs__002e__html.class

@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bundle-Category: ITCEFS Sites Project
+Bundle-Description: Core bundle for ITCEFS Sites Project
+Bundle-ManifestVersion: 2
+Bundle-Name: ITCEFS Sites Project - Core
+Bundle-SymbolicName: itc-efs.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.adobe.aem.itc.efs.core.filters;version="1.0";uses:
+ ="javax.servlet",com.adobe.aem.itc.efs.core.listeners;version="1.0";u
+ ses:="org.apache.sling.api.resource.observation",com.adobe.aem.itc.ef
+ s.core.models;version="1.0";uses:="javax.annotation,org.apache.sling.
+ api.resource,org.apache.sling.models.annotations,org.apache.sling.mod
+ els.annotations.injectorspecific",com.adobe.aem.itc.efs.core.schedule
+ rs;version="1.0",com.adobe.aem.itc.efs.core.servlets;version="1.0";us
+ es:="javax.servlet,org.apache.sling.api,org.apache.sling.api.servlets
+ "
+Import-Package: javax.annotation;version="0.0.0",com.adobe.aem.itc.efs
+ .core.filters;version="[1.0,2)",com.adobe.aem.itc.efs.core.listeners;
+ version="[1.0,2)",com.adobe.aem.itc.efs.core.schedulers;version="[1.0
+ ,2)",com.adobe.aem.itc.efs.core.servlets;version="[1.0,2)",com.day.cq
+ .wcm.api;version="[1.29,2)",javax.servlet;version="[3.1,4)",org.apach
+ e.sling.api;version="[2.3,3)",org.apache.sling.api.request;version="[
+ 2.4,3)",org.apache.sling.api.resource;version="[2.12,3)",org.apache.s
+ ling.api.resource.observation;version="[1.2,2)",org.apache.sling.api.
+ servlets;version="[2.3,3)",org.apache.sling.models.annotations;versio
+ n="[1.5,2)",org.apache.sling.models.annotations.injectorspecific;vers
+ ion="[1.1,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.adobe.aem.itc.efs.core.filters.Logging
+ Filter.xml,OSGI-INF/com.adobe.aem.itc.efs.core.listeners.SimpleResour
+ ceListener.xml,OSGI-INF/com.adobe.aem.itc.efs.core.schedulers.SimpleS
+ cheduledTask.xml,OSGI-INF/com.adobe.aem.itc.efs.core.servlets.SimpleS
+ ervlet.xml
+Sling-Model-Classes: com.adobe.aem.itc.efs.core.models.HelloWorldModel
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/itcefs" mode="merge"/>
+    <filter root="/content/itcefs" mode="merge"/>
+    <filter root="/content/dam/itcefs/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/itcefs" mode="merge"/>
+</workspaceFilter>

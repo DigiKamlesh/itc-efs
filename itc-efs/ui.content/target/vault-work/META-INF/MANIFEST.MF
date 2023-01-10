@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: ITCEFS Sites Project - UI content
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.adobe.aem.itc.efs:itc-efs.ui.content:1.0.0-SNAPS
+ HOT
+Content-Package-Description: UI content package for ITCEFS Sites Project
+Content-Package-Dependencies: com.adobe.aem.itc.efs:itc-efs.ui.apps:1.0.
+ 0-SNAPSHOT
+Content-Package-Dependencies-Locations: com.adobe.aem.itc.efs:itc-efs.ui
+ .apps:1.0.0-SNAPSHOT=maven:com.adobe.aem.itc.efs:itc-efs.ui.apps:1.0.0-
+ SNAPSHOT:zip
+Content-Package-Roots: /conf/itcefs,/content/dam/itcefs/asset.jpg,/conte
+ nt/experience-fragments/itcefs,/content/itcefs
+

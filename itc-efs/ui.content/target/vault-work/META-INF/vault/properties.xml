@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>ITCEFS Sites Project - UI content</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="acHandling">merge</entry>
+<entry key="dependencies-locations">com.adobe.aem.itc.efs:itc-efs.ui.apps:1.0.0-SNAPSHOT=maven:com.adobe.aem.itc.efs:itc-efs.ui.apps:1.0.0-SNAPSHOT:zip</entry>
+<entry key="created">2023-01-10T05:17:58.202Z</entry>
+<entry key="groupId">com.adobe.aem.itc.efs</entry>
+<entry key="description">UI content package for ITCEFS Sites Project</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">content</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="dependencies">com.adobe.aem.itc.efs:itc-efs.ui.apps:1.0.0-SNAPSHOT</entry>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="name">itc-efs.ui.content</entry>
+<entry key="artifactId">itc-efs.ui.content</entry>
+<entry key="group">com.adobe.aem.itc.efs</entry>
+</properties>

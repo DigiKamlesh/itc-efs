@@ -1,0 +1,7 @@
+com\adobe\aem\itc\efs\core\servlets\SimpleServletTest.class
+com\adobe\aem\itc\efs\core\testcontext\AppAemContext.class
+com\adobe\aem\itc\efs\core\listeners\SimpleResourceListenerTest.class
+com\adobe\aem\itc\efs\core\schedulers\SimpleScheduledTaskTest.class
+com\adobe\aem\itc\efs\core\models\HelloWorldModelTest.class
+com\adobe\aem\itc\efs\core\testcontext\AppAemContext$1.class
+com\adobe\aem\itc\efs\core\filters\LoggingFilterTest.class

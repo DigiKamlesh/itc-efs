@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/itcefs",
+        "create path (nt:unstructured) /content/dam/itcefs/jcr:content",
+        "set properties on /content/dam/itcefs/jcr:content\n  set cq:conf{String} to /conf/itcefs\n  set jcr:title{String} to \"ITCEFS Sites Project\"\nend"
+    ]
+}
