@@ -1,0 +1,19 @@
+<HTML>
+<HEAD> <font color="blue">  GET IN TOUCH </font></HEAD>
+<br/><br/>
+<form action="/bin/form"
+      method="GET">
+      First name 
+      <input type="text" maxlength="20" name="first-name" pattern="[A-Za-z]{1,255}" required/>
+      <br/><br/>                        
+      Last name
+      <input type="text" maxlength="20" name="last-name" pattern="[A-Za-z]{1,32}" required/>     
+      <br/><br/>         
+      Email address 
+      <input type="email" name="email" required/>      
+      <br/><br/>                
+      Mobile number
+      <input type="tel" name="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+      <br/><br/>
+      <button type="submit" style="background-color:skyblue; color:white" value="submit"> Submit </button>
+     </form> 
