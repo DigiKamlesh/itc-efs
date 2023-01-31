@@ -1,0 +1,17 @@
+<div class="${properties.buttonType}">
+    <button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+            data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+            data-sly-use.iconTemplate="icon.html"
+            data-sly-element="${button.link ? 'a' : 'button'}"
+            type="${button.link ? '' : 'button'}"
+            id="${component.id}"
+            data-modalid="${properties.modalId}"
+            class="cmp-button ${properties.modalId ? 'modal-info':''}"
+            href="${button.link}"
+            aria-label="${button.accessibilityLabel}"
+            data-cmp-clickable="${button.data ? true : false}"
+            data-cmp-data-layer="${button.data.json}">
+        <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+        <span data-sly-test="${button.text}" class="cmp-button__text">${button.text}</span>
+    </button>
+</div>

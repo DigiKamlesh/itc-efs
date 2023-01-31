@@ -1,0 +1,13 @@
+<sly data-sly-use.banner="com.adobe.aem.itc.efs.core.models.BannerModel"
+data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+
+
+<div class="aem-GridColumn aem-GridColumn--default--12 backgroundImage" style="background-image:url(${banner.image @ context='scriptString'})">
+<div class="aem-GridColumn aem-GridColumn--default--6 bannerleft"></div>
+<div class="aem-GridColumn aem-GridColumn--default--6 banner-right">
+	<div class="bannerInfo">
+	<h2 class="bannerTitle" data-sly-test="${banner.title}">${banner.title}</h2>
+	<h5 class="bannerDesc" data-sly-test="${banner.description @ context='html'}">${banner.description @ context='html'}</h5>
+</div>
+</div>
+</div>

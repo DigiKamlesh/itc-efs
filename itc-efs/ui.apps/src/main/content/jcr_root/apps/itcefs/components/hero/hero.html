@@ -1,0 +1,42 @@
+<sly data-sly-use.hero="com.adobe.aem.itc.efs.core.models.HeroModel"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+
+<section data-sly-test="${hero.title}" class="cmp-hero">
+    <div data-sly-test="${hero.heroType == 'big_hero'}" class="${hero.heroType}">
+        <div data-sly-test="${hero.image}" class="hero_bg_img" style="background-image:url(${hero.image @ context='styleString'})"></div>
+        <div class="hero_content_block">
+            <h1 data-sly-test="${hero.title}" class="mb-lg-2 mb-3 cmp-hero-title">${hero.title}</h1>
+            <h3 data-sly-test="${hero.description}" class="cmp-hero-description">${hero.description @ context='html'}</h3>
+        </div>
+    </div>
+    <div data-sly-test="${hero.heroType == 'small_hero'}" class="${hero.heroType}">
+        <div class="sm-full-width">
+            <div class="sm-variation">
+                <div class="hero_right_img" data-sly-test="${hero.image}">
+                    <img src="${hero.image}" alt="${hero.altText}">
+                </div>
+                <div class="hero_fullwith_content_block">
+                    <div class="small_hero_info">
+                        <h1 data-sly-test="${hero.title}" class="mb-2">${hero.title}</h1>
+                        <h3 data-sly-test="${hero.subTitle}">${hero.subTitle}</h3>
+                    </div>
+              <div class="button-wrapper ">
+				<div class="button-wrapper-2">
+						<div class="button-container">
+							<a href="${hero.linkurl}" target="_self">
+								${hero.ButtontextOne}</a>
+						</div>
+
+						</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-sly-test="${hero.description}" class="hero_bottom_content_block">
+            <div class="h6 sh_block">${hero.description @ context='html'}</div>
+        </div>
+    </div>
+</section>
+
+<sly data-sly-call="${template.placeholder @ isEmpty=!hero.title, classAppend='cmp-image'}"/>
