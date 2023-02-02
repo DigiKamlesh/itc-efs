@@ -37,7 +37,7 @@ import java.io.IOException;
  * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
  */
 @Component(service = { Servlet.class })
-@SlingServletResourceTypes(
+@SlingServletResourceTypes(    
         resourceTypes="itcefs/components/page",
         methods=HttpConstants.METHOD_GET,
         extensions="txt")

@@ -3,4 +3,5 @@
     <filter root="/apps/itcefs/clientlibs"/>
     <filter root="/apps/itcefs/components"/>
     <filter root="/apps/itcefs/i18n"/>
+    <filter root="/apps/itc"/>
 </workspaceFilter>

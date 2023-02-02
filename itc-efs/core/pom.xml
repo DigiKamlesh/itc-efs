@@ -24,6 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>itc-efs.core</artifactId>
+    <packaging>bundle</packaging>
     <name>ITCEFS Sites Project - Core</name>
     <description>Core bundle for ITCEFS Sites Project</description>
     <build>
@@ -32,22 +33,21 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>sling-maven-plugin</artifactId>
             </plugin>
+       
             <plugin>
-                <groupId>biz.aQute.bnd</groupId>
-                <artifactId>bnd-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>bnd-process</id>
-                        <goals>
-                            <goal>bnd-process</goal>
-                        </goals>
-                        <configuration>
-                            <bnd><![CDATA[
-Import-Package: javax.annotation;version=0.0.0,*
-                                ]]></bnd>
-                        </configuration>
-                    </execution>
-                </executions>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <!-- Import any version of javax.inject, to allow running on multiple versions of AEM -->
+                        <Import-Package>javax.inject;version=0.0.0,*</Import-Package>
+                        <Bundle-SymbolicName>com.adobe.aem.itc.efs.core</Bundle-SymbolicName>
+                        <Sling-Model-Packages>
+                            com.adobe.aem.itc.efs.core.models
+                        </Sling-Model-Packages>
+                    </instructions>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>biz.aQute.bnd</groupId>
@@ -68,19 +68,14 @@ Import-Package: javax.annotation;version=0.0.0,*
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
+            </plugins>
     </build>
 
     <dependencies>
+    <dependency>
+    <groupId>com.adobe.cq</groupId>
+    <artifactId>core.wcm.components.core</artifactId>
+    </dependency>
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
