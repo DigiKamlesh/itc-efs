@@ -1,0 +1,15 @@
+<sly data-sly-use.model="com.adobe.aem.itc.efs.core.models.ProductModel"
+<header class="page__header">
+   <input type="hidden" id="stockSymbolId" value="IR" />
+   <div class="aem-Grid aem-Grid--12 main-nav">
+      <div class="aem-Grid aem-Grid--12 main-nav-wrapper">
+         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--2 main-nav-content-wrapper">
+         <div class="aem-GridColumn aem-GridColumn--default--11 top-nav-link-wrapper sw-quicklinks-title">${properties.title}</div>
+            <div class="main-nav-item -dropdown" data-sly-repeat.links="${model.quickLinks}">
+               <a href="${links.linkURL}" class="link">${links.linkLabel}<span class="caret"></span>
+               </a>
+            </div>
+         </div>
+      </div>
+</header>
+</sly>
