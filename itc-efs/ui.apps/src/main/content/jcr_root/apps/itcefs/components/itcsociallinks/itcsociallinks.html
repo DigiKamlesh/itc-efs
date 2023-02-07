@@ -1,0 +1,12 @@
+<sly data-sly-use.socialLinks="com.adobe.aem.itc.efs.core.models.ItcSocialModel"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${socialLinks.socialLinks.size > 0}">
+
+    <p data-sly-test.label="${socialLinks.label}">${label}</p>
+    <sly data-sly-list="${socialLinks.socialLinks}">
+        <a data-sly-test="${item.iconUrl && item.icon}" href="${item.iconUrl}">
+            <img alt="${item.altText}" src="${item.icon}">
+        </a>
+    </sly>
+</sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent, classAppend='cmp-title'}"></sly>
