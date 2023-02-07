@@ -43,7 +43,6 @@
 
     <properties>
         <aem.host>localhost</aem.host>
-        <aem.port>4504</aem.port>
         <aem.publish.host>localhost</aem.publish.host>
         <aem.publish.port>4503</aem.publish.port>
         <sling.user>admin</sling.user>
