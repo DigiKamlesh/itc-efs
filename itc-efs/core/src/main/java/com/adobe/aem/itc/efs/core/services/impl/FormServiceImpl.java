@@ -13,6 +13,7 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.Designate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.adobe.aem.itc.efs.core.services.EmailService;
 import com.adobe.aem.itc.efs.core.services.FormConf;
 import com.adobe.aem.itc.efs.core.services.FormService;
 import com.day.cq.commons.jcr.JcrUtil;
@@ -23,12 +24,13 @@ public class FormServiceImpl implements FormService{
 	String path;
 	@Reference
 	private ResourceResolverFactory resolverFactory;
+	@Reference
+	EmailService emailService;
 	@Activate
 	  public void activate(FormConf conf) {
 		 path=conf.pathName();
 		  }
-	
-public void storeCustomerData(HashMap<String, String> hmap) {
+	public void storeCustomerData(HashMap<String, String> hmap) {
 	ResourceResolver resolver;
 	try {
 		final Map<String, Object> paramMap = new HashMap<String, Object>();
@@ -48,6 +50,7 @@ public void storeCustomerData(HashMap<String, String> hmap) {
 		childNode.setProperty("pn",hmap.get("phone-number"));
 		session.save();
 		LOG.info("user added");
+		emailService.sendEmail("Email has sent");
 	} catch (Exception e) {
 		LOG.error("===unable to create node===",e);
 	}
